@@ -1,7 +1,7 @@
 {
     "version": 2,
     "functions": {
-        "api/teamData.js": {
+        "api/teams.js": {
             "memory": 1024
         },
         "api/joinus.js": {
@@ -14,7 +14,7 @@
     "routes": [
         {
             "src": "/teamData",
-            "dest": "/api/teamData.js"
+            "dest": "/api/teams.js"
         },
         {
             "src": "/JoinUs",
