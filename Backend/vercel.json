@@ -1,15 +1,28 @@
 {
     "version": 2,
+    "functions": {
+        "api/**/*.js": {
+            "maxDuration": 60
+        }
+    },
     "builds": [
         {
-            "src": "index.js",
+            "src": "api/**/*.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/index.js"
+            "src": "/JoinUs",
+            "dest": "/api/joinus.js"
+        },
+        {
+            "src": "/Collaborate",
+            "dest": "/api/collaborate.js"
+        },
+        {
+            "src": "/teamData",
+            "dest": "/api/teamData.js"
         }
     ]
 }
