@@ -19,17 +19,10 @@ app.use(
   cors({
     origin: [
       "https://rac-project-frontend.vercel.app",
-      "http://localhost:3000",
+      "http://localhost:3001",
+      // Add your Vercel frontend URL if different
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: [
-      "Content-Type",
-      "Authorization",
-      "Origin",
-      "Accept",
-      "X-Requested-With",
-    ],
-    exposedHeaders: ["Content-Range", "X-Content-Range"],
     credentials: true,
   })
 );
