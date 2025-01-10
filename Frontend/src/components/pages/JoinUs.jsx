@@ -34,7 +34,7 @@ export const JoinUs = () => {
     try {
       // Send form data to the server using POST request
       const response = await axios.post(
-        "https://rac-project-two.vercel.app/JoinUs",
+        "https://rac-project-backend.vercel.app/JoinUs",
         formData,
         {
           headers: {
