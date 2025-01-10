@@ -49,6 +49,12 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
+// Add this before your routes
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path}`);
+  next();
+});
+
 // Routes
 app.get("/", async (req, res) => {
   res.json("hello bhai server chal rha hai"); // Endpoint to test server connectivity
