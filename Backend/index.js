@@ -17,9 +17,19 @@ const PORT = process.env.PORT || 5000;
 // Middleware setup
 app.use(
   cors({
-    origin: ["https://rac-project-frontend.vercel.app"],
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    origin: [
+      "https://rac-project-frontend.vercel.app",
+      "http://localhost:3000",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+      "Origin",
+      "Accept",
+      "X-Requested-With",
+    ],
+    exposedHeaders: ["Content-Range", "X-Content-Range"],
     credentials: true,
   })
 );
