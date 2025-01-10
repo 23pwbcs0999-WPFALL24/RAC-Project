@@ -1,15 +1,9 @@
 {
     "version": 2,
     "functions": {
-        "api/teamData.js": {
-            "runtime": "nodejs18.x"
-        },
-        "api/joinus.js": {
-            "runtime": "nodejs18.x"
-        },
-        "api/collaborate.js": {
-            "runtime": "nodejs18.x"
-        }
+        "api/teamData.js": {},
+        "api/joinus.js": {},
+        "api/collaborate.js": {}
     },
     "routes": [
         {
