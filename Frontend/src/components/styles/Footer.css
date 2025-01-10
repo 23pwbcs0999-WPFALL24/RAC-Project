@@ -46,3 +46,45 @@
     font-size: 1rem; /* Set font size for the copyright text */
     font-weight: 550; /* Slightly bold font for the text */
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer {
+        height: auto; /* Adjust height dynamically */
+        padding: 15px 5px; /* Reduce horizontal padding */
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .social-icons svg {
+        width: 25px; /* Smaller icons */
+        height: 25px;
+    }
+
+    .social-icons a {
+        margin: 0 10px; /* Reduce space between icons */
+    }
+
+    .footer p {
+        font-size: 0.9rem; /* Smaller copyright text */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    .social-icons svg {
+        width: 20px; /* Even smaller icons for mobile */
+        height: 20px;
+    }
+
+    .social-icons a {
+        margin: 0 8px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+}

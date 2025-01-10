@@ -17,14 +17,22 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 550px;
-    border-radius: 15px; /* Smooth rounded corners */
+    height: auto; /* Changed from fixed height */
+    min-height: 550px;
+    border-radius: 15px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Styling for the form section where inputs are placed */
 .form-section {
     width: 45%;
-    height: 500px;
+    min-width: 300px; /* Ensure minimum width */
+    height: auto; /* Changed from fixed height */
+    min-height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
     margin-top: 50px;
 }
 
@@ -35,14 +43,20 @@
     align-items: center;
     justify-content: center;
     width: 45%;
-    height: 500px;
+    min-width: 300px; /* Ensure minimum width */
+    height: auto; /* Changed from fixed height */
+    min-height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
     background-color: #f2f2f2; /* Matching background with the main container */
 }
 
 /* Image inside the heading section */
 .join-us-img {
-    width: auto;
-    height: 400px; /* Constrained height for the image */
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
 }
 
 /* Styling for heading text */
@@ -134,4 +148,50 @@ button:hover {
     color: black; /* Switch text color */
     transition: 300ms ease-in-out; /* Smooth hover transition */
     transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .main {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    .joinUs-form {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .form-section,
+    .heading {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    input,
+    textarea {
+        margin: 30px 20px;
+        width: calc(100% - 40px);
+    }
+
+    label {
+        margin-left: 20px;
+    }
+
+    .heading > h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .heading > h1 {
+        font-size: 2rem;
+    }
+
+    .submit-btn > button {
+        width: 90%;
+        font-size: 1.2rem;
+    }
 }

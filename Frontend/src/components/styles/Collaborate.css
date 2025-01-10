@@ -10,6 +10,7 @@
     width: 100%; /* Full width */
     height: 100vh; /* Full viewport height */
     background-color: #f2f2f2; /* Light gray background */
+    margin-bottom: 65px;
 }
 
 /* Form container styling */
@@ -58,4 +59,36 @@ input, textarea {
     font-size: 14px; /* Font size */
     font-weight: 300; /* Light font weight */
     transition: 300ms ease; /* Smooth transition for focus effects */
+}
+
+@media screen and (max-width: 768px) {
+    .collaborate-container {
+        padding: 15px;
+    }
+
+    .collaborate-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 15px;
+    }
+
+    .collaborate-form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .collaborate-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .collaborate-form {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .form-input,
+    .form-textarea {
+        padding: 8px;
+    }
 }

@@ -244,3 +244,94 @@
 .achievements-img:hover::after {
     bottom: 0;
 }
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .hero > h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 95%;
+    }
+
+    .about-us, .our-vision {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text, .about-us-img, .our-vision-img {
+        width: 90%;
+    }
+
+    .text > h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .achievements-imgs {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
+    }
+
+    .achievements-img {
+        width: 45%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero > h1 {
+        font-size: 36px;
+    }
+
+    .hero-img {
+        height: 400px;
+    }
+
+    .text > h1 {
+        font-size: 2rem;
+    }
+
+    .text > p {
+        font-size: 1.1rem;
+    }
+
+    .achievements > h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .achievements-img {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero > h1 {
+        font-size: 28px;
+    }
+
+    .hero-img {
+        height: 300px;
+    }
+
+    .about-us-img {
+        flex-direction: column;
+    }
+
+    .about-us-img-1-1,
+    .about-us-img-1-2 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about-us-img-2,
+    .about-us-img-3 {
+        height: 200px;
+    }
+}

@@ -139,3 +139,28 @@
 .team-member-info h3{
   margin-right: 11px;
 }
+
+@media screen and (max-width: 768px) {
+    .teams-container {
+        padding: 15px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 15px;
+    }
+
+    .team-card {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .team-card {
+        margin: 10px 0;
+    }
+}
