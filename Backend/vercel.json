@@ -2,26 +2,26 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/**/*.js",
+            "src": "index.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/teamData",
+            "src": "/api/teams",
             "dest": "/api/teams.js"
         },
         {
-            "src": "/JoinUs",
+            "src": "/api/joinus",
             "dest": "/api/joinus.js"
         },
         {
-            "src": "/Collaborate",
+            "src": "/api/collaborate",
             "dest": "/api/collaborate.js"
         },
         {
-            "src": "/",
-            "dest": "/api/index.js"
+            "src": "/(.*)",
+            "dest": "/index.js"
         }
     ]
 }
