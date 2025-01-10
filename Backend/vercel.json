@@ -1,22 +1,15 @@
 {
     "version": 2,
-    "functions": {
-        "api/**/*.{js,ts}": {
-            "runtime": "nodejs18.x"
+    "builds": [
+        {
+            "src": "Index.js",
+            "use": "@vercel/node"
         }
-    },
+    ],
     "routes": [
         {
-            "src": "/teamData",
-            "dest": "/api/teamData.js"
-        },
-        {
-            "src": "/JoinUs",
-            "dest": "/api/joinus.js"
-        },
-        {
-            "src": "/Collaborate",
-            "dest": "/api/collaborate.js"
+            "src": "/(.*)",
+            "dest": "/Index.js"
         }
     ]
 }
