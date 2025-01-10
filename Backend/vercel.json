@@ -8,20 +8,24 @@
     ],
     "routes": [
         {
-            "src": "/teamData",
+            "src": "/api/teamData",
             "dest": "/api/teams.js"
         },
         {
-            "src": "/JoinUs",
+            "src": "/api/JoinUs",
             "dest": "/api/joinus.js"
         },
         {
-            "src": "/Collaborate",
+            "src": "/api/Collaborate",
             "dest": "/api/collaborate.js"
         },
         {
+            "handle": "filesystem"
+        },
+        {
             "src": "/(.*)",
-            "dest": "/api/index.js"
+            "dest": "/api/index.js",
+            "continue": true
         }
     ]
 }
