@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 5000;
 app.use(
   cors({
     origin: [
-      "https://rac-project-frontend.vercel.app",
+      "https://racproject.vercel.app",
       "http://localhost:3001",
       // Add your Vercel frontend URL if different
     ],
