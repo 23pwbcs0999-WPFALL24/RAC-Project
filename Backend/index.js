@@ -11,7 +11,7 @@ import teamData from "./Schemas/teamDataSchema.js";
 dotenv.config(); // Load environment variables from .env file
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware setup
 app.use(
