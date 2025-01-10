@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // Import React and useState for component state
 import axios from "axios"; // Import axios for making HTTP requests
 import "../styles/JoinUs.css"; // Import CSS for styling
-import { toast } from 'react-toastify'; // Import toast for notifications
+import { toast } from "react-toastify"; // Import toast for notifications
 
 // Functional component for the "Join Us" form
 export const JoinUs = () => {
@@ -25,7 +25,7 @@ export const JoinUs = () => {
   };
 
   axios.defaults.withCredentials = true;
-  
+
   // Handle form submission
   const handleSubmit = async (data) => {
     data.preventDefault(); // Prevent default form submission behavior
@@ -33,25 +33,39 @@ export const JoinUs = () => {
     setIsSubmitting(true); // Disable submit button while submitting
     try {
       // Send form data to the server using POST request
-      const response = await axios.post("https://rac-project.vercel.app/JoinUs", formData, {
-        headers: {
-          'Content-Type': 'application/json', // Specify JSON content type
+      const response = await axios.post(
+        "http://localhost:5000/joinus",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json", // Specify JSON content type
+          },
         }
-      });
+      );
       toast.success(response.data.message); // Show success message using toast
     } catch (error) {
       // Get error message from response or fallback to a default message
-      const errorMessage = error.response?.data?.message || "Error submitting form. Please try again.";
+      const errorMessage =
+        error.response?.data?.message ||
+        "Error submitting form. Please try again.";
       toast.error(errorMessage); // Show error message using toast
     }
     setIsSubmitting(false); // Re-enable submit button after submission
   };
 
   return (
-    <div className="main"> {/* Main container */}
-      <div className="joinUs-form"> {/* Form container */}
-        <div className="form-section"> {/* Section for the form */}
-          <form className="form" onSubmit={handleSubmit}> {/* Form element */}
+    <div className="main">
+      {" "}
+      {/* Main container */}
+      <div className="joinUs-form">
+        {" "}
+        {/* Form container */}
+        <div className="form-section">
+          {" "}
+          {/* Section for the form */}
+          <form className="form" onSubmit={handleSubmit}>
+            {" "}
+            {/* Form element */}
             {/* Input field for name */}
             <div className="input">
               <input
@@ -102,20 +116,28 @@ export const JoinUs = () => {
             </div>
             {/* Submit button */}
             <div className="submit-btn">
-              <button type="submit" disabled={isSubmitting}> {/* Disable button if submitting */}
-                {isSubmitting ? 'Submitting...' : 'Submit'} {/* Show loading state */}
+              <button type="submit" disabled={isSubmitting}>
+                {" "}
+                {/* Disable button if submitting */}
+                {isSubmitting ? "Submitting..." : "Submit"}{" "}
+                {/* Show loading state */}
               </button>
             </div>
           </form>
-          {message && <p className="message">{message}</p>} {/* Show submission message if exists */}
+          {message && <p className="message">{message}</p>}{" "}
+          {/* Show submission message if exists */}
         </div>
         {/* Section for heading and additional information */}
         <div className="heading">
           <h1>
             Join <span style={{ fontFamily: "Dancing Script" }}>Us</span>
           </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, veritatis!</p>
-          <img src="/join-us-3.png" alt="" className="join-us-img" /> {/* Decorative image */}
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus, veritatis!
+          </p>
+          <img src="/join-us-3.png" alt="" className="join-us-img" />{" "}
+          {/* Decorative image */}
         </div>
       </div>
     </div>

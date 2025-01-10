@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import '../styles/Teams.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "../styles/Teams.css";
 
 export const Teams = () => {
   // State to hold the fetched team data
@@ -17,7 +17,7 @@ export const Teams = () => {
   // useEffect hook to fetch data when the component mounts
   useEffect(() => {
     axios
-      .get("https://rac-project.vercel.app/teamData") // API call to fetch team data
+      .get("http://localhost:5000/teamData") // API call to fetch team data
       .then((res) => {
         setTeamData(res.data); // Save fetched data to state
         setLoading(false); // Set loading to false once data is fetched
@@ -69,7 +69,8 @@ export const Teams = () => {
       {/* Upper Cabinet Section */}
       <h2 className="headings">UPPER CABINET</h2>
       <div className="team-members">
-        {renderTeamMembers(firstThreeMembers)} {/* Render first three members */}
+        {renderTeamMembers(firstThreeMembers)}{" "}
+        {/* Render first three members */}
       </div>
 
       {/* Core Cabinet Section */}
