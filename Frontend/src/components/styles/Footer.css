@@ -1,6 +1,7 @@
 /* Footer Styling */
 .footer {
-    position: absolute; /* Positioning the footer at the bottom of the page */
+    position: relative; /* Changed from absolute to relative */
+    bottom: 0;         /* Add this to keep it at bottom */
     width: 100%; /* Full width of the screen */
     height: 3rem; /* Height of the footer, adjusted for the icons */
     text-align: center; /* Center the content inside the footer */
@@ -87,4 +88,12 @@
     .footer p {
         font-size: 0.8rem;
     }
+}
+
+/* If you want to ensure the footer stays at the bottom, 
+   add this to your main container/body CSS */
+.main-container { /* or body, #root, etc. */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

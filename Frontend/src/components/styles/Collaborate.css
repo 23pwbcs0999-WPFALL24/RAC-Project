@@ -62,33 +62,25 @@ input, textarea {
 }
 
 @media screen and (max-width: 768px) {
-    .collaborate-container {
+    .collab {
         padding: 15px;
     }
 
-    .collaborate-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-        gap: 15px;
-    }
-
-    .collaborate-form {
+    .collab-form {
         width: 90%;
         padding: 15px;
     }
+
+    /* If you need grid layout, add it to the main styles above first */
 }
 
 @media screen and (max-width: 480px) {
-    .collaborate-grid {
-        grid-template-columns: 1fr; /* Single column for mobile */
-    }
-
-    .collaborate-form {
+    .collab-form {
         width: 95%;
         padding: 10px;
     }
 
-    .form-input,
-    .form-textarea {
+    input, textarea {
         padding: 8px;
     }
 }
