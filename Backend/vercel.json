@@ -1,9 +1,15 @@
 {
     "version": 2,
     "functions": {
-        "api/teamData.js": {},
-        "api/joinus.js": {},
-        "api/collaborate.js": {}
+        "api/teamData.js": {
+            "memory": 1024
+        },
+        "api/joinus.js": {
+            "memory": 1024
+        },
+        "api/collaborate.js": {
+            "memory": 1024
+        }
     },
     "routes": [
         {
