@@ -1,16 +1,5 @@
 {
     "version": 2,
-    "functions": {
-        "api/teams.js": {
-            "memory": 1024
-        },
-        "api/joinus.js": {
-            "memory": 1024
-        },
-        "api/collaborate.js": {
-            "memory": 1024
-        }
-    },
     "routes": [
         {
             "src": "/teamData",
