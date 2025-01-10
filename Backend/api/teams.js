@@ -6,11 +6,14 @@ const router = express.Router();
 // Route to fetch team data
 router.get("/", async (req, res) => {
   try {
-    const data = await teamData.find();
-    res.status(200).json(data);
+    const teams = await teamData.find();
+    console.log("Teams found:", teams);
+    res.json(teams);
   } catch (error) {
-    console.error("Error fetching team data:", error.message);
-    res.status(500).json({ message: "Internal Server Error" });
+    console.error("Error fetching teams:", error);
+    res
+      .status(500)
+      .json({ message: "Error fetching teams", error: error.message });
   }
 });
 
