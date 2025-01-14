@@ -52,22 +52,40 @@
     width: 350px;
 }
 
-@media screen and (max-width: 768px) {
-    /* Add these media queries to your Network.css */
-    .network-container {
-        padding: 10px;
-        margin: 10px;
+@media screen and (max-width: 1024px) {
+    .network-img {
+        width: 60%; /* Increase image width on medium screens */
     }
 
-    .network-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-        gap: 15px;
+    .text-1, .text-2, .text-3, .text-4 {
+        width: 250px; /* Reduce text box width */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .network {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .network-img {
+        width: 90%;
+        height: 400px; /* Reduce height on mobile */
+        margin: 20px 0;
+    }
+
+    .text-1, .text-2, .text-3, .text-4 {
+        position: static; /* Remove absolute positioning */
+        width: 90%;
+        margin: 10px auto;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 }
 
 @media screen and (max-width: 480px) {
-    .network-grid {
-        grid-template-columns: 1fr; /* Single column for mobile */
-        gap: 10px;
+    .network-img {
+        width: 100%;
+        height: 300px;
     }
 }
