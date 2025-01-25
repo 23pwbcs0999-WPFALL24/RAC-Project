@@ -26,7 +26,7 @@ export const Footer = () => {
           <FaLinkedin size={30} />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/robo.auto__/?igsh=MXA1em8waGtzcTd4YQ%3D%3D#"
           target="_blank"
           rel="noopener noreferrer"
         >
