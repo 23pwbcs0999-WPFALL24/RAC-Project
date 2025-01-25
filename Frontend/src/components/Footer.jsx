@@ -9,7 +9,7 @@ export const Footer = () => {
       {/* Social media icons */}
       <div className="social-icons">
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/share/1BXcZs3eS6/"
           target="_blank"
           rel="noopener noreferrer"
         >
