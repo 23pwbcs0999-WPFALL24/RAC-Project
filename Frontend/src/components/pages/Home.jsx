@@ -38,12 +38,7 @@ export const Home = () => {
                         <span style={{ fontFamily: "Dancing Script" }}>Robotics</span> And Automation Community
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati blanditiis
-                        voluptatibus cumque, molestias praesentium nihil deserunt fugiat itaque inventore
-                        necessitatibus reprehenderit consequuntur non cum ipsa quaerat labore atque quidem
-                        autem tenetur dicta voluptatum sed sit. Voluptatum dolore suscipit, molestiae quo
-                        quidem libero iure unde ipsum laborum. Minus, est qui.
+The Robotics and Automation Community (RAC) is a platform for innovators, engineers, and technology enthusiasts to explore the limitless possibilities of robotics. Our mission is to design, build, and share intelligent systems that make life easier, safer, and more efficient. Whether it’s creating advanced robotic arms, developing autonomous drones, or experimenting with AI-powered machines, we bring ideas to life through teamwork, creativity, and cutting-edge technology. At RAC, we believe that automation isn’t just the future—it’s the present, and we’re here to shape it.
                     </p>
                 </div>
                 <div className="about-us-img">
@@ -80,12 +75,9 @@ export const Home = () => {
                         <span style={{ fontFamily: "Dancing Script" }}>Our</span> Vision
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati blanditiis
-                        voluptatibus cumque, molestias praesentium nihil deserunt fugiat itaque inventore
-                        necessitatibus reprehenderit consequuntur non cum ipsa quaerat labore atque quidem
-                        autem tenetur dicta voluptatum sed sit. Voluptatum dolore suscipit, molestiae quo
-                        quidem libero iure unde ipsum laborum. Minus, est qui.
+                      We envision a future where robotics and automation work hand in hand with humanity to solve real-world challenges. Our goal is to inspire and equip individuals with the skills, knowledge, and confidence to become pioneers in the field. Through hands-on projects, workshops, and competitions, we aim to cultivate problem-solvers who are ready to lead the next wave of technological breakthroughs. At RAC, our vision is simple yet powerful: innovate for impact, automate for progress, and empower for a better tomorrow.
+
+
                     </p>
                 </div>
             </motion.div>
