@@ -3,68 +3,64 @@ export const teamData = [
     id: 1,
     name: "Muhammad Mohsin",
     position: "Founder",
-    description: "John is the founder and CEO, overseeing all major decisions.",
+    description: "Muhammad Mohsin is the visionary founder, guiding the team with strategic leadership and innovative ideas.",
     image: "/Mohsin.jpeg",
   },
   {
     id: 2,
     name: "Owais Raza",
     position: "Co-Founder",
-    description: "Jane is the chief technical officer, leading our tech department.",
+    description: "Owais Raza co-founded the team and plays a key role in planning and decision-making for growth and success.",
     image: "/owais.jpeg",
   },
   {
     id: 3,
     name: "Muhammad Afnan",
     position: "Co-Founder",
-    description: "Mary is the lead developer, responsible for the core coding structure.",
+    description: "Muhammad Afnan is a driving force behind operations, ensuring smooth coordination and project execution.",
     image: "/Afnan.jpg",
   },
   {
     id: 4,
     name: "Hamza Javed",
     position: "Director Seminars",
-    description: "Mary is the lead developer, responsible for the core coding structure.",
+    description: "Hamza Javed leads our seminars, organizing impactful events and fostering community engagement.",
     image: "/Hamza J.jpg",
   },
-
-
   {
     id: 5,
     name: "Salim Aziz",
     position: "Head team Photography",
-    description: "Mary is the lead developer, responsible for the core coding structure.",
+    description: "Salim Aziz captures the essence of our moments through exceptional photography and creative direction.",
     image: "/Salim (2).jpg",
   },
   {
     id: 6,
     name: "Saqib",
-    position: "Seminar head",
-    description: "Mary is the lead developer, responsible for the core coding structure.",
+    position: "Seminar Head",
+    description: "Saqib oversees seminar planning, ensuring every session is well-organized and valuable for the audience.",
     image: "/Saqib Ullah.jpg",
   },
-
   {
     id: 7,
     name: "Hamza Asif",
     position: "Team technical remote",
-    description: "Mary is the lead developer, responsible for the core coding structure.",
+    description: "Hamza Asif provides remote technical expertise, ensuring our systems run smoothly and efficiently.",
     image: "/IMG-20240501-WA0038.jpg",
   },
   {
     id: 8,
     name: "Sofyan Babar",
     position: "Director Management",
-    description: "Mary is the lead developer, responsible for the core coding structure.",
+    description: "Sofyan Babar manages operations and resources, making sure the team stays on track toward its goals.",
     image: "/Sofyan.jpg",
   },
   {
     id: 9,
     name: "Abdul Baseer",
     position: "Director Team Content",
-    description: "Mary is the lead developer, responsible for the core coding structure.",
+    description: "Abdul Baseer leads the content team, creating engaging materials that represent our mission and vision.",
     image: "/bas.jpg",
   },
-
   // Add more team members as needed
 ];
